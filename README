@@ -1,0 +1,58 @@
+After successful installation of the latest version of Virtual Box and Cloudera:
+
+Shift the dataset:
+ hadoop fs -put /home/cloudera/BDS/obama-visitor-logs/ /user/cs6220/ (where BDS is the name of the shared folder between the host computer and VM)
+
+For Part 1, Run the following command:
+sh run1-part1.sh
+sh run2.sh
+
+To view the result:
+hadoop fs -cat /user/cs6220/BDS-part1-temp2/part-00000 | head -n 10
+
+Delete the generated files:
+
+ hadoop fs -rm -r /user/cs6220/BDS-part1-temp1
+
+ hadoop fs -rm -r /user/cs6220/BDS-part1-temp2
+
+
+For Part 2, Run the following command:
+sh run1-part2.sh
+sh run2.sh
+
+To view the result:
+hadoop fs -cat /user/cs6220/BDS-part1-temp2/part-00000 | head -n 10
+
+Delete the generated files:
+
+ hadoop fs -rm -r /user/cs6220/BDS-part1-temp1
+
+ hadoop fs -rm -r /user/cs6220/BDS-part1-temp2
+
+For Part 3, Run the following command:
+sh run1-part3.sh
+sh run2.sh
+
+To view the result:
+hadoop fs -cat /user/cs6220/BDS-part1-temp2/part-00000 | head -n 10
+
+Delete the generated files:
+
+ hadoop fs -rm -r /user/cs6220/BDS-part1-temp1
+
+ hadoop fs -rm -r /user/cs6220/BDS-part1-temp2
+
+
+For Part 4, Run the following command:
+sh run1-part4.sh
+sh run2.sh
+
+To view the result:
+hadoop fs -cat /user/cs6220/BDS-part1-temp2/part-00000 | head -n 10
+
+Delete the generated files:
+
+ hadoop fs -rm -r /user/cs6220/BDS-part1-temp1
+
+ hadoop fs -rm -r /user/cs6220/BDS-part1-temp2
